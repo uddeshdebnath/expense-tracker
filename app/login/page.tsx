@@ -75,7 +75,7 @@ export default function LoginPage() {
   const [email, setEmail]       = useState('')
   const [password, setPassword] = useState('')
   const [showPw, setShowPw]     = useState(false)
-  const [error, setError]       = useState(null)
+  const [error, setError] = useState<string | null>(null)
   // Signup-specific: show confirmation instead of form after success
   const [signedUp, setSignedUp] = useState(false)
   const [loading, setLoading]   = useState(false)
